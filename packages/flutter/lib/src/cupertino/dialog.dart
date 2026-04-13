@@ -721,12 +721,11 @@ class CupertinoPopupSurface extends StatelessWidget {
 
     if (filter != null) {
       return ClipRSuperellipse(
-        borderRadius: _clipper,
         child: BackdropFilter(filterConfig: filter, child: contents),
       );
     }
 
-    return ClipRSuperellipse(borderRadius: _clipper, child: contents);
+    return ClipRSuperellipse(child: contents);
   }
 }
 
@@ -1686,7 +1685,6 @@ class _ActionSheetButtonBackgroundState extends State<_ActionSheetButtonBackgrou
       const borderRadius = BorderRadius.all(Radius.circular(_kCornerRadius));
 
       child = ClipRSuperellipse(
-        borderRadius: borderRadius,
         child: DecoratedBox(
           decoration: BoxDecoration(
             color: CupertinoDynamicColor.resolve(

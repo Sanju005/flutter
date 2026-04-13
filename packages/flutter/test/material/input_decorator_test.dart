@@ -1912,7 +1912,6 @@ void main() {
             filled: false,
             labelText: labelText,
             focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.zero,
               borderSide: BorderSide(width: borderWidth, color: Colors.red),
             ),
           ),
@@ -4958,7 +4957,7 @@ void main() {
                         labelText: labelText,
                         alignLabelWithHint: alignLabelWithHint,
                         hintText: hintText,
-                        border: const OutlineInputBorder(borderRadius: BorderRadius.zero),
+                        border: const OutlineInputBorder(),
                       ),
                     ),
                   ),
@@ -11301,7 +11300,7 @@ void main() {
                       labelText: 'label',
                       alignLabelWithHint: alignLabelWithHint,
                       hintText: 'hint',
-                      border: const OutlineInputBorder(borderRadius: BorderRadius.zero),
+                      border: const OutlineInputBorder(),
                     ),
                   ),
                 ),
@@ -14668,7 +14667,7 @@ void main() {
         hoverColor.withAlpha(0),
         hoverColor,
         _getHoverAnimation(tester).value,
-      )!;
+      );
       expect(getContainerColor(tester), isSameColorAs(Color.alphaBlend(midHoverColor, fillColor)));
 
       await pumpDecorator(hovering: false, enabled: false);
@@ -15254,7 +15253,6 @@ void main() {
             filled: false,
             labelText: labelText,
             focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.zero,
               borderSide: BorderSide(width: borderWidth, color: Colors.red),
             ),
           ),

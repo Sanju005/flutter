@@ -1896,7 +1896,7 @@ void main() {
   ) async {
     const size = Size(64, 64);
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: Center(
           child: CircularProgressIndicator(
             constraints: BoxConstraints(minWidth: size.width, minHeight: size.height),
